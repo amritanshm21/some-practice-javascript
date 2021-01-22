@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>TASK</h2>
+
+<p id="demo"> <br></p>
+
+
+<script>
+    function union (arr1,arr2){
+        var Object1 = {};
+        var result = [];
+
+        arr1.forEach(values => {
+            Object1[values] = true;
+        });
+        arr2.forEach(values => {
+            Object1[values] = true;
+        });
+        for(var x in Object1){
+            result.push(x);
+        }
+        
+        return result;
+    }
+    console.log(union([1,2,3],[10,1,100,2]));
+</script>
+
+</body>
+</html>
